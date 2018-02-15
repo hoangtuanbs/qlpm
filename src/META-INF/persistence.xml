@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="QLPMPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entities.Service</class>
+    <class>entities.OperationService</class>
+    <class>entities.Customer</class>
+    <class>entities.Operation</class>
+    <class>entities.OperationTicket</class>
+    <class>entities.Ticket</class>
+    <class>entities.Prediction</class>
+    <class>entities.Target</class>
+    <class>entities.User</class>
+    <class>entities.BookingTicket</class>
+    <class>entities.TicketPrediction</class>
+    <class>entities.ServiceTicket</class>
+    <class>gui.Usertbl</class>
+    <class>entities.OperationType</class>
+    <class>entities.Payment</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/clinic"/>
+      <property name="javax.persistence.jdbc.password" value="robothehe5c"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="db_dental_user"/>
+    </properties>
+  </persistence-unit>
+</persistence>
